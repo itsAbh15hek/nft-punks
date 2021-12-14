@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import "./app.css";
+import "./App.css";
 import Header from "./compoents/Header";
 import PunkList from "./compoents/PunkList";
 import ShowCase from "./compoents/ShowCase";
