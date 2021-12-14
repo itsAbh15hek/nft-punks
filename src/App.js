@@ -13,16 +13,7 @@ function App() {
   useEffect(() => {
     const getMyNfts = async () => {
       const openseaData = await fetch(
-        "https://thingproxy.freeboard.io/fetch/https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=0x9cADBBC66a4f934720CF430340D4747A0D75c60D&order_direction=asc",
-        {
-          method: "GET",
-          mode: "cors",
-          cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-          credentials: "same-origin", // include, *same-origin, omit
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
+        "https://thingproxy.freeboard.io/fetch/https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=0x9cADBBC66a4f934720CF430340D4747A0D75c60D&order_direction=asc"
       ).then((results) => results.json());
       console.log("openseaData.assets", openseaData.assets);
       setPunkList(openseaData.assets);
