@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./compoents/Header";
@@ -13,14 +12,21 @@ function App() {
 
   useEffect(() => {
     const getMyNfts = async () => {
-      const openseaData = await axios.get(
-        "https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=0x9cADBBC66a4f934720CF430340D4747A0D75c60D&order_direction=asc"
-      );
-      setPunkList(openseaData.data.assets);
+      const openseaData = await fetch(
+        "https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=0x9cADBBC66a4f934720CF430340D4747A0D75c60D&order_direction=asc",
+        {
+          method: "GET",
+          mode: "cors",
+          cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+          credentials: "same-origin", // include, *same-origin, omit
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      ).then((results) => results.json());
+      setPunkList(openseaData.assets);
     };
-    setTimeout(() => {
-      getMyNfts();
-    }, 1500);
+    getMyNfts();
   }, []);
 
   if (punkList.length === 0)
@@ -36,7 +42,6 @@ function App() {
   return (
     <div className="app">
       <Header />
-
       <ShowCase selectedPunk={selectedPunk} punkList={punkList[0]} />
       <PunkList punkList={punkList} setSelectedPunk={setSelectedPunk} />
     </div>
