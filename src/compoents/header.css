@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px;
+  margin: 30px 10px 10px 10px;
 }
 
 .punk-logo {
@@ -35,7 +35,9 @@
   color: #eee;
   font-size: 15px;
 }
-
+.hamburger {
+  display: none;
+}
 .header-items ul {
   height: 50px;
   display: flex;
@@ -74,4 +76,95 @@
   outline: none;
   border-radius: 50px;
   padding: 14px 40px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin: 5px;
+    margin-top: 20px;
+  }
+
+  .punk-logo {
+    width: 120px;
+    margin-right: 5px;
+  }
+
+  .search-container {
+    background-color: #1c1c1e;
+    display: flex;
+    align-items: center;
+    flex: none;
+    height: 50px;
+    border-radius: 50px;
+    margin: 10px;
+  }
+
+  .search-icon-container {
+    height: 37px;
+    width: 39px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+  }
+
+  .search-bar {
+    display: none;
+    font-size: 10px;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    margin-left: auto;
+  }
+  .hamburger span {
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .header-items ul {
+    height: 50px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #000;
+  }
+  .header-items li {
+    list-style: none;
+    color: #a1a5b0;
+    margin: 10px;
+  }
+  .header-actions {
+    display: none;
+    align-items: center;
+  }
+
+  .theme-switch-container {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #0c0c0e;
+    border-radius: 50%;
+  }
+
+  .theme-switch-icon {
+    margin: 10px;
+    width: 25px;
+  }
+
+  .login-button {
+    background: linear-gradient(to right, #59f9b7, #66feea);
+
+    height: 50px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 14px 40px;
+  }
 }

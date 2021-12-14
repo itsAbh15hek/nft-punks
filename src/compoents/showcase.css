@@ -70,3 +70,89 @@
 .owner-sm-img {
   width: 80%;
 }
+@media (max-width: 768px) {
+  .showcase {
+    height: auto;
+    width: 60vw;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .punk-highlight {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  .punk-image-container {
+    width: 60vh;
+    overflow: hidden;
+    padding: 0;
+  }
+  .selected-punk {
+    width: 55vw;
+    border-radius: 30px;
+  }
+
+  .punk-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .showcase-item-id {
+    font-size: 18px;
+    font-weight: 600;
+    color: rebeccapurple;
+    margin-left: 0px;
+  }
+
+  .showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: none;
+  }
+
+  .owner-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .owner-image-container {
+    width: 50px;
+    margin-right: 10px;
+  }
+  .owner-image {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .owner-credentials {
+    flex: none;
+    font-size: 8px;
+    width: 40vw;
+    flex-wrap: wrap;
+  }
+  .owner-handle {
+    color: #66feea;
+    font-size: 12px;
+  }
+
+  .owner-sm {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .owner-sm-img {
+    width: 80%;
+  }
+}

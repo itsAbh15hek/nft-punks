@@ -9,7 +9,7 @@ const PunkList = ({ punkList, setSelectedPunk }) => {
   return (
     <div className="punklist" ref={scrollRef}>
       {punkList.map((punk) => (
-        <div onClick={() => setSelectedPunk(punk)} id={punk.id}>
+        <div onClick={() => setSelectedPunk(punk)} key={punk.id}>
           <CollectionCard
             name={punk.name || "Bowl Punk"}
             id={punk.id}

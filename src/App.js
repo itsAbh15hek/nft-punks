@@ -39,8 +39,10 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <ShowCase selectedPunk={selectedPunk} punkList={punkList[0]} />
-      <PunkList punkList={punkList} setSelectedPunk={setSelectedPunk} />
+      <div className="main">
+        <ShowCase selectedPunk={selectedPunk} punkList={punkList[0]} />
+        <PunkList punkList={punkList} setSelectedPunk={setSelectedPunk} />
+      </div>
     </div>
   );
 }

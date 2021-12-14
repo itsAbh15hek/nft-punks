@@ -1,7 +1,7 @@
 .collection-card {
   border-radius: 30px;
   overflow: hidden;
-  min-width: 300px;
+  width: 300px;
   height: 500px;
   background-color: #0c0c0e;
   margin-right: 40px;
@@ -32,4 +32,40 @@
 .price-img {
   height: 30px;
   margin-right: 5px;
+}
+@media (max-width: 768px) {
+  .collection-card {
+    border-radius: 20px;
+    width: 30vw;
+    height: auto;
+    margin: 4px 0;
+    overflow: hidden;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  .card-details {
+    padding: 5px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .card-title {
+    font-weight: 900;
+    font-size: small;
+  }
+  .card-id {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .price-container {
+    margin-top: 5px;
+  }
+  .price-img {
+    height: 15px;
+    margin-right: 5px;
+  }
 }

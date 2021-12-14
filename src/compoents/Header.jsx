@@ -20,6 +20,11 @@ const Header = () => {
           placeholder="Collection, Item, User..."
         />
       </div>
+      <div className="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div className="header-items">
         <ul>
           <li>Drops</li>
