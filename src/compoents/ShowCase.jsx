@@ -9,6 +9,7 @@ const ShowCase = ({ selectedPunk, punkList }) => {
   useEffect(() => {
     setActivePunk(selectedPunk);
     console.log("activePunk", activePunk);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedPunk]);
   useEffect(() => {
     setActivePunk({ ...punkList });
