@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/nft-punks/static/css/main.d52da9ca.chunk.css",
-    "main.js": "/nft-punks/static/js/main.cf2b7fa2.chunk.js",
-    "main.js.map": "/nft-punks/static/js/main.cf2b7fa2.chunk.js.map",
+    "main.css": "/nft-punks/static/css/main.70aa105c.chunk.css",
+    "main.js": "/nft-punks/static/js/main.17d756f0.chunk.js",
+    "main.js.map": "/nft-punks/static/js/main.17d756f0.chunk.js.map",
     "runtime-main.js": "/nft-punks/static/js/runtime-main.0e127ad5.js",
     "runtime-main.js.map": "/nft-punks/static/js/runtime-main.0e127ad5.js.map",
     "static/js/2.6460a6a1.chunk.js": "/nft-punks/static/js/2.6460a6a1.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.d6ea5e44.chunk.js": "/nft-punks/static/js/3.d6ea5e44.chunk.js",
     "static/js/3.d6ea5e44.chunk.js.map": "/nft-punks/static/js/3.d6ea5e44.chunk.js.map",
     "index.html": "/nft-punks/index.html",
-    "static/css/main.d52da9ca.chunk.css.map": "/nft-punks/static/css/main.d52da9ca.chunk.css.map",
+    "static/css/main.70aa105c.chunk.css.map": "/nft-punks/static/css/main.70aa105c.chunk.css.map",
     "static/js/2.6460a6a1.chunk.js.LICENSE.txt": "/nft-punks/static/js/2.6460a6a1.chunk.js.LICENSE.txt",
     "static/media/cryptopunk-logo.8bee49d5.png": "/nft-punks/static/media/cryptopunk-logo.8bee49d5.png",
     "static/media/eth.4aa4d7e0.png": "/nft-punks/static/media/eth.4aa4d7e0.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.0e127ad5.js",
     "static/js/2.6460a6a1.chunk.js",
-    "static/css/main.d52da9ca.chunk.css",
-    "static/js/main.cf2b7fa2.chunk.js"
+    "static/css/main.70aa105c.chunk.css",
+    "static/js/main.17d756f0.chunk.js"
   ]
 }
