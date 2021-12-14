@@ -21,7 +21,6 @@ function App() {
       // fetch(
       //   "https://testnets-api.opensea.io/assets?order_direction=asc&asset_contract_address=0x9cADBBC66a4f934720CF430340D4747A0D75c60D&order_direction=asc"
       // ).then((results) => results.json());
-      console.log("openseaData.assets", openseaData.assets);
       setPunkList(openseaData.assets);
     };
     getMyNfts();
